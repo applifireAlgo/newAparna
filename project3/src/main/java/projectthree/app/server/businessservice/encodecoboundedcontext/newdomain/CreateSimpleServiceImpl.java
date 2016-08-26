@@ -22,6 +22,7 @@ public class CreateSimpleServiceImpl implements CreateSimpleService {
     @Override
     public List<QoneRM> createSimpleService() throws Exception {
         java.util.List<projectthree.app.shared.encodecoboundedcontext.QoneRM> qoneRMList = testqoneBzService.executeQueryQone();
+        System.out.println("List size"+qoneRMList.size());
         return qoneRMList;
     }
 }
