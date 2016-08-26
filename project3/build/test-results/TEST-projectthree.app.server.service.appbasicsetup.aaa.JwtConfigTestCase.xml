@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-08-26T10:17:14" hostname="d6252af96598" time="20.199">
+  <properties/>
+  <testcase name="test1Save" classname="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" time="20.006"/>
+  <testcase name="test2Update" classname="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" time="0.075"/>
+  <testcase name="test3FindById" classname="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" time="0.03"/>
+  <testcase name="test5NegativeTesting" classname="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" time="0.028"/>
+  <testcase name="test6Delete" classname="projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase" time="0.059"/>
+  <system-out><![CDATA[Fri Aug 26 10:17:14 UTC 2016|Log Manager Factory|Initialization Process started.....
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/project3/src/main/webapp/WEB-INF/conf]
+Fri Aug 26 10:17:14 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/project3/src/main/webapp/WEB-INF/conf]
+Fri Aug 26 10:17:14 UTC 2016|Alarm Manager|Loading Alarms ......
+Fri Aug 26 10:17:14 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Fri Aug 26 10:17:14 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Fri Aug 26 10:17:14 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Fri Aug 26 10:17:14 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Fri Aug 26 10:17:14 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Fri Aug 26 10:17:14 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=6/873 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=1/1 [87/0]  A.Map=[962]  E.Map EC/RC=[445/91] )
+Fri Aug 26 10:17:14 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Fri Aug 26 10:17:14 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Fri Aug 26 10:17:14 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=6/873 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=1/1 [87/0]  A.Map=[962]  E.Map EC/RC=[445/91] )
+Fri Aug 26 10:17:14 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Initialize Log Config File ......
+Fri Aug 26 10:17:14 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Fri Aug 26 10:17:14 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Fri Aug 26 10:17:14 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Fri Aug 26 10:17:14 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Fri Aug 26 10:17:14 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Fri Aug 26 10:17:14 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@51f102bd] ....
+Fri Aug 26 10:17:14 UTC 2016|Scheduler|Starting the Scheduler ......
+Fri Aug 26 10:17:14 UTC 2016|Scheduler|Adding [LMID=[50e67a13-e4f5-424e-9d74-d0fb892e261f]] Delay=5 Time Unit=MINUTES
+Fri Aug 26 10:17:14 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Fri Aug 26 10:17:14 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Fri Aug 26 10:17:14 UTC 2016|Scheduler|Startup Completed..
+Fri Aug 26 10:17:14 UTC 2016|Log Manager|Initialization Process Complete ......
+Fri Aug 26 10:17:14 UTC 2016|Log Manager Factory|Log Manager READY! ID = 50e67a13-e4f5-424e-9d74-d0fb892e261f
+[EL Finest]: jpa: 2016-08-26 10:17:21.076--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Begin predeploying Persistence Unit projectthree; session file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar_projectthree; state Initial; factoryCount 0
+[EL Finest]: properties: 2016-08-26 10:17:21.092--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.orm.throw.exceptions; default value=true
+[EL Finest]: properties: 2016-08-26 10:17:21.093--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.multitenant.tenants-share-emf; default value=true
+[EL Finest]: properties: 2016-08-26 10:17:21.093--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.multitenant.tenants-share-cache; default value=false
+[EL Finer]: metadata: 2016-08-26 10:17:21.109--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Searching for default mapping file in file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar (There is no English translation for this message.)
+[EL Finer]: metadata: 2016-08-26 10:17:21.112--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Searching for default mapping file in file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar (There is no English translation for this message.)
+[EL Config]: metadata: 2016-08-26 10:17:21.301--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.AddressType] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.32--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.Title] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.32--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.State] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.322--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.UserAccessLevel] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.322--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.CommunicationData] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.323--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.City] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.324--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Employee] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.325--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ArtHealthStatusConfiguration] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.325--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Answer] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.326--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.athena.shared.pluggable.entity.AuditPropertiesEntity] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.329--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.SMSConfig] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.33--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.Question] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.331--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Cuisine] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.331--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.EntityAudit] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.332--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.SystemInfo] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.333--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Food] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.333--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Indian] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.334--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.User] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.339--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field userData] is being defaulted to: class projectthree.app.shared.appbasicsetup.usermanagement.UserData.
+[EL Config]: metadata: 2016-08-26 10:17:21.343--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field passRecovery] is being defaulted to: class projectthree.app.shared.appbasicsetup.usermanagement.PassRecovery.
+[EL Config]: metadata: 2016-08-26 10:17:21.344--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenHealthGauge] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.345--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.Timezone] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.346--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.UserAccessDomain] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.347--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogStatus] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.347--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.athena.shared.pluggable.entity.ArtEntity] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.347--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.aaa.ArtUserLastStatus] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.348--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtBoundedContext] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.349--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field artDomain] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtDomain.
+[EL Config]: metadata: 2016-08-26 10:17:21.35--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.PasswordPolicy] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.351--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogConnector] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.351--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field logConnectorAttributes] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtLogConnectorAttributes.
+[EL Config]: metadata: 2016-08-26 10:17:21.352--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the many to one mapping element [field artLogConfig] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtLogConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.352--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.SMSNotification] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.353--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.userrolemanagement.RoleMenuBridge] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.354--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field roles] is being defaulted to: class projectthree.app.shared.appbasicsetup.userrolemanagement.Roles.
+[EL Config]: metadata: 2016-08-26 10:17:21.354--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogConfig] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.355--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.userrolemanagement.UserRoleBridge] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.355--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogAlarm] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.356--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.aaa.PublicApi] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.356--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.HealthSchedulerConfiguration] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.357--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.PasswordAlgo] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.358--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenSchedulerHealth] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.36--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.aaa.JwtConfig] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.36--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.UserData] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.361--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field user] is being defaulted to: class projectthree.app.shared.appbasicsetup.usermanagement.User.
+[EL Config]: metadata: 2016-08-26 10:17:21.361--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.userrolemanagement.AppMenus] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.362--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.userrolemanagement.Roles] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.363--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field roleMenuBridge] is being defaulted to: class projectthree.app.shared.appbasicsetup.userrolemanagement.RoleMenuBridge.
+[EL Config]: metadata: 2016-08-26 10:17:21.363--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLoggingProperties] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.364--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the many to one mapping element [field artLogConfig] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtLogConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.364--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogConnectorAttributes] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.364--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the many to one mapping element [field artLogConnector] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtLogConnector.
+[EL Config]: metadata: 2016-08-26 10:17:21.365--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.CommunicationType] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.365--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenHealthStatus] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.366--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.SessionData] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.367--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Quest] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.367--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field answer] is being defaulted to: class projectthree.app.shared.encodecoboundedcontext.newdomain.Answer.
+[EL Config]: metadata: 2016-08-26 10:17:21.368--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.CommunicationGroup] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.368--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenRequestDetails] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.369--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ArtHealthSchedulerConfiguration] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.37--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.PassRecovery] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.371--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field user] is being defaulted to: class projectthree.app.shared.appbasicsetup.usermanagement.User.
+[EL Config]: metadata: 2016-08-26 10:17:21.371--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.ContactType] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.371--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.athena.shared.dataengine.report.ArtReportUI] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.372--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtAppNotificationTemplate] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.373--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.CoreContacts] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.374--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field timezone] is being defaulted to: class projectthree.app.shared.organization.locationmanagement.Timezone.
+[EL Config]: metadata: 2016-08-26 10:17:21.374--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field address] is being defaulted to: class projectthree.app.shared.organization.locationmanagement.Address.
+[EL Config]: metadata: 2016-08-26 10:17:21.375--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to many mapping element [field communicationData] is being defaulted to: class projectthree.app.shared.organization.contactmanagement.CommunicationData.
+[EL Config]: metadata: 2016-08-26 10:17:21.375--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordAlgorithm] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.376--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.LoginSession] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.377--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtDocumentTemplate] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.377--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenHealthCounter] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.378--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.entity.ZenHealth] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.38--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordPolicy] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.381--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.Country] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.382--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogSeverity] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.382--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.server.session.entity.AppSessionConfig] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.383--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogEventAction] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.383--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogArchitectureLayer] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.383--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.Address] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.384--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtDomain] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.385--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the many to one mapping element [field artBoundedContext] is being defaulted to: class projectthree.app.shared.appinsight.alarms.ArtBoundedContext.
+[EL Config]: metadata: 2016-08-26 10:17:21.385--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogException] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.386--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.contactmanagement.Gender] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.386--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.organization.locationmanagement.Language] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.387--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.athena.shared.dataengine.query.ArtQuery] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.388--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appbasicsetup.usermanagement.Login] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.388--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field coreContacts] is being defaulted to: class projectthree.app.shared.organization.contactmanagement.CoreContacts.
+[EL Config]: metadata: 2016-08-26 10:17:21.389--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The target entity (reference) class for the one to one mapping element [field user] is being defaulted to: class projectthree.app.shared.appbasicsetup.usermanagement.User.
+[EL Config]: metadata: 2016-08-26 10:17:21.389--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class projectthree.app.shared.appinsight.alarms.ArtLogEvents] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.391--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.shared.EntityAudit] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.391--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The access type for the persistent class [class com.spartan.healthmeter.shared.SystemInfo] is set to [FIELD].
+[EL Config]: metadata: 2016-08-26 10:17:21.403--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.AddressType] is being defaulted to: AddressType.
+[EL Config]: metadata: 2016-08-26 10:17:21.411--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.Title] is being defaulted to: Title.
+[EL Config]: metadata: 2016-08-26 10:17:21.412--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.State] is being defaulted to: State.
+[EL Config]: metadata: 2016-08-26 10:17:21.413--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.UserAccessLevel] is being defaulted to: UserAccessLevel.
+[EL Config]: metadata: 2016-08-26 10:17:21.413--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.CommunicationData] is being defaulted to: CommunicationData.
+[EL Config]: metadata: 2016-08-26 10:17:21.414--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.City] is being defaulted to: City.
+[EL Config]: metadata: 2016-08-26 10:17:21.414--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Employee] is being defaulted to: Employee.
+[EL Config]: metadata: 2016-08-26 10:17:21.415--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ArtHealthStatusConfiguration] is being defaulted to: ArtHealthStatusConfiguration.
+[EL Config]: metadata: 2016-08-26 10:17:21.416--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Answer] is being defaulted to: Answer.
+[EL Config]: metadata: 2016-08-26 10:17:21.416--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.SMSConfig] is being defaulted to: SMSConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.417--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.Question] is being defaulted to: Question.
+[EL Config]: metadata: 2016-08-26 10:17:21.417--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Indian] is being defaulted to: Indian.
+[EL Config]: metadata: 2016-08-26 10:17:21.417--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Food] is being defaulted to: Food.
+[EL Warning]: metadata: 2016-08-26 10:17:21.419--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Ignoring the cache metadata on the inheritance subclass [class projectthree.app.shared.encodecoboundedcontext.newdomain.Indian]. Cache metadata should only be specified on the root of the inheritance hierarchy and can not be overidden in an inheritance subclass.
+[EL Warning]: metadata: 2016-08-26 10:17:21.419--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Ignoring the cache metadata on the inheritance subclass [class projectthree.app.shared.encodecoboundedcontext.newdomain.Cuisine]. Cache metadata should only be specified on the root of the inheritance hierarchy and can not be overidden in an inheritance subclass.
+[EL Config]: metadata: 2016-08-26 10:17:21.42--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.User] is being defaulted to: User.
+[EL Config]: metadata: 2016-08-26 10:17:21.421--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenHealthGauge] is being defaulted to: ZenHealthGauge.
+[EL Config]: metadata: 2016-08-26 10:17:21.422--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.Timezone] is being defaulted to: Timezone.
+[EL Config]: metadata: 2016-08-26 10:17:21.422--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.UserAccessDomain] is being defaulted to: UserAccessDomain.
+[EL Config]: metadata: 2016-08-26 10:17:21.423--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogStatus] is being defaulted to: ArtLogStatus.
+[EL Config]: metadata: 2016-08-26 10:17:21.423--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.aaa.ArtUserLastStatus] is being defaulted to: ArtUserLastStatus.
+[EL Config]: metadata: 2016-08-26 10:17:21.425--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtBoundedContext] is being defaulted to: ArtBoundedContext.
+[EL Config]: metadata: 2016-08-26 10:17:21.425--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.PasswordPolicy] is being defaulted to: PasswordPolicy.
+[EL Config]: metadata: 2016-08-26 10:17:21.426--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogConnector] is being defaulted to: ArtLogConnector.
+[EL Config]: metadata: 2016-08-26 10:17:21.427--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.SMSNotification] is being defaulted to: SMSNotification.
+[EL Config]: metadata: 2016-08-26 10:17:21.427--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.userrolemanagement.RoleMenuBridge] is being defaulted to: RoleMenuBridge.
+[EL Config]: metadata: 2016-08-26 10:17:21.428--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogConfig] is being defaulted to: ArtLogConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.429--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.userrolemanagement.UserRoleBridge] is being defaulted to: UserRoleBridge.
+[EL Config]: metadata: 2016-08-26 10:17:21.429--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogAlarm] is being defaulted to: ArtLogAlarm.
+[EL Config]: metadata: 2016-08-26 10:17:21.43--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.aaa.PublicApi] is being defaulted to: PublicApi.
+[EL Config]: metadata: 2016-08-26 10:17:21.43--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.HealthSchedulerConfiguration] is being defaulted to: HealthSchedulerConfiguration.
+[EL Config]: metadata: 2016-08-26 10:17:21.431--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.PasswordAlgo] is being defaulted to: PasswordAlgo.
+[EL Config]: metadata: 2016-08-26 10:17:21.432--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenSchedulerHealth] is being defaulted to: ZenSchedulerHealth.
+[EL Config]: metadata: 2016-08-26 10:17:21.433--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.aaa.JwtConfig] is being defaulted to: JwtConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.434--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.UserData] is being defaulted to: UserData.
+[EL Config]: metadata: 2016-08-26 10:17:21.435--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.userrolemanagement.AppMenus] is being defaulted to: AppMenus.
+[EL Config]: metadata: 2016-08-26 10:17:21.436--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.userrolemanagement.Roles] is being defaulted to: Roles.
+[EL Config]: metadata: 2016-08-26 10:17:21.436--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLoggingProperties] is being defaulted to: ArtLoggingProperties.
+[EL Config]: metadata: 2016-08-26 10:17:21.437--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogConnectorAttributes] is being defaulted to: ArtLogConnectorAttributes.
+[EL Config]: metadata: 2016-08-26 10:17:21.437--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.CommunicationType] is being defaulted to: CommunicationType.
+[EL Config]: metadata: 2016-08-26 10:17:21.438--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenHealthStatus] is being defaulted to: ZenHealthStatus.
+[EL Config]: metadata: 2016-08-26 10:17:21.438--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.SessionData] is being defaulted to: SessionData.
+[EL Config]: metadata: 2016-08-26 10:17:21.44--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.encodecoboundedcontext.newdomain.Quest] is being defaulted to: Quest.
+[EL Config]: metadata: 2016-08-26 10:17:21.44--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.CommunicationGroup] is being defaulted to: CommunicationGroup.
+[EL Config]: metadata: 2016-08-26 10:17:21.441--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenRequestDetails] is being defaulted to: ZenRequestDetails.
+[EL Config]: metadata: 2016-08-26 10:17:21.441--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ArtHealthSchedulerConfiguration] is being defaulted to: ArtHealthSchedulerConfiguration.
+[EL Config]: metadata: 2016-08-26 10:17:21.442--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.PassRecovery] is being defaulted to: PassRecovery.
+[EL Config]: metadata: 2016-08-26 10:17:21.443--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.ContactType] is being defaulted to: ContactType.
+[EL Config]: metadata: 2016-08-26 10:17:21.443--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.athena.shared.dataengine.report.ArtReportUI] is being defaulted to: ArtReportUI.
+[EL Config]: metadata: 2016-08-26 10:17:21.444--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtAppNotificationTemplate] is being defaulted to: ArtAppNotificationTemplate.
+[EL Config]: metadata: 2016-08-26 10:17:21.445--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.CoreContacts] is being defaulted to: CoreContacts.
+[EL Config]: metadata: 2016-08-26 10:17:21.446--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordAlgorithm] is being defaulted to: ArtPasswordAlgorithm.
+[EL Config]: metadata: 2016-08-26 10:17:21.447--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.LoginSession] is being defaulted to: LoginSession.
+[EL Config]: metadata: 2016-08-26 10:17:21.448--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtDocumentTemplate] is being defaulted to: ArtDocumentTemplate.
+[EL Config]: metadata: 2016-08-26 10:17:21.449--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenHealthCounter] is being defaulted to: ZenHealthCounter.
+[EL Config]: metadata: 2016-08-26 10:17:21.449--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.healthmeter.entity.ZenHealth] is being defaulted to: ZenHealth.
+[EL Config]: metadata: 2016-08-26 10:17:21.451--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordPolicy] is being defaulted to: ArtPasswordPolicy.
+[EL Config]: metadata: 2016-08-26 10:17:21.452--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.Country] is being defaulted to: Country.
+[EL Config]: metadata: 2016-08-26 10:17:21.453--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogSeverity] is being defaulted to: ArtLogSeverity.
+[EL Config]: metadata: 2016-08-26 10:17:21.453--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.spartan.server.session.entity.AppSessionConfig] is being defaulted to: AppSessionConfig.
+[EL Config]: metadata: 2016-08-26 10:17:21.453--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogEventAction] is being defaulted to: ArtLogEventAction.
+[EL Config]: metadata: 2016-08-26 10:17:21.454--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogArchitectureLayer] is being defaulted to: ArtLogArchitectureLayer.
+[EL Config]: metadata: 2016-08-26 10:17:21.454--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.Address] is being defaulted to: Address.
+[EL Config]: metadata: 2016-08-26 10:17:21.455--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtDomain] is being defaulted to: ArtDomain.
+[EL Warning]: metadata: 2016-08-26 10:17:21.455--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--You have specified multiple ids for the entity class [projectthree.app.shared.appinsight.alarms.ArtDomain] without specifying an @IdClass. By doing this you may lose the ability to find by identity, distributed cache support etc. Note: You may however use entity manager find operations by passing a list of primary key fields. Else, you will have to use JPQL queries to read your entities. For other id options see @PrimaryKey.
+[EL Config]: metadata: 2016-08-26 10:17:21.456--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogException] is being defaulted to: ArtLogException.
+[EL Config]: metadata: 2016-08-26 10:17:21.456--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.contactmanagement.Gender] is being defaulted to: Gender.
+[EL Config]: metadata: 2016-08-26 10:17:21.457--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.organization.locationmanagement.Language] is being defaulted to: Language.
+[EL Config]: metadata: 2016-08-26 10:17:21.457--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class com.athena.shared.dataengine.query.ArtQuery] is being defaulted to: ArtQuery.
+[EL Config]: metadata: 2016-08-26 10:17:21.458--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.Login] is being defaulted to: Login.
+[EL Config]: metadata: 2016-08-26 10:17:21.46--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--The alias name for the entity class [class projectthree.app.shared.appinsight.alarms.ArtLogEvents] is being defaulted to: ArtLogEvents.
+[EL Finest]: jpa: 2016-08-26 10:17:21.663--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--End predeploying Persistence Unit projectthree; session file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar_projectthree; state Predeployed; factoryCount 1
+[EL Finest]: properties: 2016-08-26 10:17:21.667--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.deploy-on-startup; value=true
+[EL Finest]: jpa: 2016-08-26 10:17:21.667--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Begin deploying Persistence Unit projectthree; session file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar_projectthree; state Predeployed; factoryCount 1
+[EL Finest]: properties: 2016-08-26 10:17:21.735--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.logging.level; value=FINEST; translated value=FINEST
+[EL Finest]: properties: 2016-08-26 10:17:21.736--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.logging.level; value=FINEST; translated value=FINEST
+[EL Finest]: properties: 2016-08-26 10:17:21.739--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.connection-pool.default.min; value=6
+[EL Finest]: properties: 2016-08-26 10:17:21.74--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.connection-pool.default.initial; value=15
+[EL Finest]: properties: 2016-08-26 10:17:21.741--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.connection-pool.default.max; value=10
+[EL Finest]: properties: 2016-08-26 10:17:21.741--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.cache.shared.default; value=false; translated value=false
+[EL Finest]: properties: 2016-08-26 10:17:21.742--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.jdbc.batch-writing; value=JDBC; translated value=JDBC
+[EL Finest]: properties: 2016-08-26 10:17:21.742--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.jdbc.batch-writing.size; value=500
+[EL Finest]: properties: 2016-08-26 10:17:21.743--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.jdbc.allow-native-sql-queries; value=true
+[EL Finest]: properties: 2016-08-26 10:17:21.743--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.allow-zero-id; value=true
+[EL Finest]: properties: 2016-08-26 10:17:21.744--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--property=eclipselink.session.customizer; value=projectthree.app.config.UUIDGenerator
+[EL Info]: 2016-08-26 10:17:21.746--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:21.998--Thread(Thread[Test worker,5,main])--(?i)oracle.*12 (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:21.999--Thread(Thread[Test worker,5,main])--(?i)oracle.*11 (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:21.999--Thread(Thread[Test worker,5,main])--(?i)oracle.*10 (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:21.999--Thread(Thread[Test worker,5,main])--(?i)oracle.*9 (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:21.999--Thread(Thread[Test worker,5,main])--(?i)oracle.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.0--Thread(Thread[Test worker,5,main])--SQL\ Anywhere.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.0--Thread(Thread[Test worker,5,main])--(?i)(sybase.*)|(adaptive\ server\ enterprise.*)|(SQL\ Server.*) (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.0--Thread(Thread[Test worker,5,main])--(?i)microsoft.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.0--Thread(Thread[Test worker,5,main])--(?i).*derby.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.0--Thread(Thread[Test worker,5,main])--(?i).*db2.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.001--Thread(Thread[Test worker,5,main])--(?i)pointbase.* (There is no English translation for this message.)
+[EL Finest]: dbPlatformHelper_regExprDbPlatform: 2016-08-26 10:17:22.001--Thread(Thread[Test worker,5,main])--(?i)mysql.* (There is no English translation for this message.)
+[EL Fine]: connection: 2016-08-26 10:17:22.001--Thread(Thread[Test worker,5,main])--Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform
+[EL Config]: connection: 2016-08-26 10:17:22.008--ServerSession(1851516305)--Connection(1704802109)--Thread(Thread[Test worker,5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2016-08-26 10:17:22.009--ServerSession(1851516305)--Connection(1373670135)--Thread(Thread[Test worker,5,main])--Connected: jdbc:mysql://localhost-MYSQL:3306/project3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+	User: project3@172.17.0.6
+	Database: MySQL  Version: 5.7.7-rc
+	Driver: MySQL Connector Java  Version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
+[EL Finest]: connection: 2016-08-26 10:17:22.01--ServerSession(1851516305)--Connection(1824753695)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [read].
+[EL Finest]: connection: 2016-08-26 10:17:22.01--ServerSession(1851516305)--Connection(1824753695)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [read].
+[EL Config]: connection: 2016-08-26 10:17:22.01--ServerSession(1851516305)--Connection(421389058)--Thread(Thread[Test worker,5,main])--connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2016-08-26 10:17:22.011--ServerSession(1851516305)--Connection(1368059594)--Thread(Thread[Test worker,5,main])--Connected: jdbc:mysql://localhost-MYSQL:3306/project3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+	User: project3@172.17.0.6
+	Database: MySQL  Version: 5.7.7-rc
+	Driver: MySQL Connector Java  Version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
+[EL Finest]: sequencing: 2016-08-26 10:17:22.018--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--sequencing connected, state is NoPreallocation_State
+[EL Finest]: sequencing: 2016-08-26 10:17:22.018--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--sequence UUIDGenerator: preallocation size 50
+[EL Finest]: sequencing: 2016-08-26 10:17:22.018--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--sequence SEQ_GEN_IDENTITY: preallocation size 1
+[EL Warning]: metadata: 2016-08-26 10:17:22.02--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [userData] for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.User] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2016-08-26 10:17:22.026--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [coreContacts] for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.Login] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2016-08-26 10:17:22.026--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [user] for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.Login] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2016-08-26 10:17:22.028--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [user] for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.UserData] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2016-08-26 10:17:22.029--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [user] for the entity class [class projectthree.app.shared.appbasicsetup.usermanagement.PassRecovery] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2016-08-26 10:17:22.03--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [timezone] for the entity class [class projectthree.app.shared.organization.contactmanagement.CoreContacts] since weaving was not enabled or did not occur.
+[EL Info]: connection: 2016-08-26 10:17:22.238--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar_projectthree login successful
+[EL Finer]: metamodel: 2016-08-26 10:17:22.255--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtBoundedContext_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.255--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ArtHealthStatusConfiguration_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.256--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.User_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.257--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogConnector_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.257--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.CommunicationData_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.258--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogException_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.258--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.Timezone_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.259--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.CommunicationGroup_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.259--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.userrolemanagement.AppMenus_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.26--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.shared.SystemInfo_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.26--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.server.session.entity.AppSessionConfig_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.261--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.Address_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.261--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogSeverity_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.261--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.Title_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.261--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.athena.shared.dataengine.query.ArtQuery_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.262--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogConnectorAttributes_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.262--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.LoginSession_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.262--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ArtHealthSchedulerConfiguration_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.263--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.athena.shared.dataengine.report.ArtReportUI_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.263--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenHealthStatus_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.263--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.SessionData_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.264--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.ArtAppNotificationTemplate_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.264--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.State_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.264--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Employee_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.265--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.HealthSchedulerConfiguration_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.265--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.PasswordPolicy_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.265--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Quest_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.265--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.Country_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.266--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Food_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.266--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.CommunicationType_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.266--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.AddressType_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.267--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.userrolemanagement.UserRoleBridge_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.267--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.shared.EntityAudit_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.267--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.UserAccessDomain_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.268--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordPolicy_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.268--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogEventAction_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.268--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.Question_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.268--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenRequestDetails_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.269--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.ContactType_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.269--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenHealth_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.269--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.EntityAudit_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.27--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.userrolemanagement.Roles_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.27--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.Login_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.27--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogArchitectureLayer_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.271--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.aaa.ArtUserLastStatus_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.271--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.userrolemanagement.RoleMenuBridge_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.271--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenHealthGauge_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.272--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.aaa.PublicApi_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.272--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLoggingProperties_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.272--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogAlarm_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.272--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.City_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.273--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.ArtPasswordAlgorithm_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.273--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.SMSConfig_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.273--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.UserAccessLevel_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.274--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Indian_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.274--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogStatus_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.274--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.UserData_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.275--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Answer_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.275--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.SystemInfo_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.275--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogEvents_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.276--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.aaa.JwtConfig_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.276--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.PasswordAlgo_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.276--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.PassRecovery_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.277--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.Gender_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.277--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenSchedulerHealth_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.277--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtDomain_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.277--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appinsight.alarms.ArtLogConfig_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.278--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.contactmanagement.CoreContacts_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.278--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.organization.locationmanagement.Language_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.278--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.SMSNotification_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.279--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.appbasicsetup.usermanagement.ArtDocumentTemplate_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.279--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.spartan.healthmeter.entity.ZenHealthCounter_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.279--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.athena.shared.pluggable.entity.ArtEntity_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.28--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [projectthree.app.shared.encodecoboundedcontext.newdomain.Cuisine_] not found during initialization.
+[EL Finer]: metamodel: 2016-08-26 10:17:22.28--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--Canonical Metamodel class [com.athena.shared.pluggable.entity.AuditPropertiesEntity_] not found during initialization.
+[EL Finest]: jpa: 2016-08-26 10:17:22.28--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--End deploying Persistence Unit projectthree; session file:/home/applifire/workspace/project3/build/libs/app-shared-encodecoboundedcontext-newdomain-1.0.jar_projectthree; state Deployed; factoryCount 1
+[EL Finer]: connection: 2016-08-26 10:17:27.399--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 729913783
+[EL Finer]: transaction: 2016-08-26 10:17:27.406--ClientSession(729913783)--Thread(Thread[Test worker,5,main])--acquire unit of work: 676173727
+[EL Finest]: connection: 2016-08-26 10:17:27.406--ServerSession(1851516305)--Connection(2115853412)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.406--ClientSession(729913783)--Connection(2115853412)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.407--ClientSession(729913783)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-08-26 10:17:27.419--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-08-26 10:17:27.42--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-08-26 10:17:27.42--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(referenceClass=ArtQuery sql="SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (active_status = ?)")
+[EL Fine]: sql: 2016-08-26 10:17:27.422--ClientSession(729913783)--Connection(417580656)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (active_status = ?)
+	bind => [true]
+Repository handle
+[EL Finer]: transaction: 2016-08-26 10:17:27.443--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.446--ClientSession(729913783)--Connection(417580656)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.447--ServerSession(1851516305)--Connection(2115853412)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.447--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.447--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.448--UnitOfWork(676173727)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.448--ClientSession(729913783)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.448--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 769407155
+[EL Finer]: transaction: 2016-08-26 10:17:27.448--ClientSession(769407155)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1427015498
+[EL Finest]: connection: 2016-08-26 10:17:27.448--ServerSession(1851516305)--Connection(752105190)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.448--ClientSession(769407155)--Connection(752105190)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.449--ClientSession(769407155)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.453--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=0A1175DA-1FCF-48F4-96D8-CBDE5501997B, jpqlQuery=delete from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId, queryType=1, name=deleteAllSessionData, hiddenName=DELETEALLSESSIONDATA]
+[EL Finest]: query: 2016-08-26 10:17:27.454--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.455--ClientSession(769407155)--Connection(799248237)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [0A1175DA-1FCF-48F4-96D8-CBDE5501997B]
+[EL Finer]: transaction: 2016-08-26 10:17:27.456--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.457--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=0A1175DA-1FCF-48F4-96D8-CBDE5501997B, jpqlQuery=delete from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId, queryType=1, name=deleteAllSessionData, hiddenName=DELETEALLSESSIONDATA])
+[EL Fine]: sql: 2016-08-26 10:17:27.458--ClientSession(769407155)--Connection(799248237)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [DELETE FROM ast_SessionData_T WHERE ((activeStatus = ?) AND (appSessionId = ?)), 0A1175DA-1FCF-48F4-96D8-CBDE5501997B]
+[EL Finer]: transaction: 2016-08-26 10:17:27.46--ClientSession(769407155)--Connection(799248237)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.653--ServerSession(1851516305)--Connection(752105190)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.654--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.654--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.655--UnitOfWork(1427015498)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.655--ClientSession(769407155)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.655--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 466285130
+[EL Finer]: transaction: 2016-08-26 10:17:27.656--ClientSession(466285130)--Thread(Thread[Test worker,5,main])--acquire unit of work: 686352007
+[EL Finest]: connection: 2016-08-26 10:17:27.656--ServerSession(1851516305)--Connection(1383513612)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.656--ClientSession(466285130)--Connection(1383513612)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.656--ClientSession(466285130)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.671--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=197FFBDF-167D-40F5-B285-6646415D6FA2, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logSeverity.severityId, logSeverity.severity, myBoundedContext.boundedContextName, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myDomain.domainName, logEvents.eventDate FROM ArtLogSeverity AS logSeverity, ArtBoundedContext AS myBoundedContext, ArtLogArchitectureLayer AS logArchitectureLayer, ArtDomain AS myDomain, ArtLogEvents AS logEvents WHERE logArchitectureLayer.layerId = logEvents.layerId AND logSeverity.severityId = logEvents.severity AND myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 GROUP BY logSeverity.severityId, logSeverity.severity, myBoundedContext.boundedContextName, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myDomain.domainName, logEvents.eventDate ORDER BY logEvents.eventDate DESC, queryType=2, name=Event Summary Layer wise, hiddenName=EVENT SUMMARY LAYER WISE]
+[EL Finest]: query: 2016-08-26 10:17:27.671--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.672--ClientSession(466285130)--Connection(1473023153)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [197FFBDF-167D-40F5-B285-6646415D6FA2]
+[EL Finer]: transaction: 2016-08-26 10:17:27.674--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.675--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=197FFBDF-167D-40F5-B285-6646415D6FA2, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logSeverity.severityId, logSeverity.severity, myBoundedContext.boundedContextName, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myDomain.domainName, logEvents.eventDate FROM ArtLogSeverity AS logSeverity, ArtBoundedContext AS myBoundedContext, ArtLogArchitectureLayer AS logArchitectureLayer, ArtDomain AS myDomain, ArtLogEvents AS logEvents WHERE logArchitectureLayer.layerId = logEvents.layerId AND logSeverity.severityId = logEvents.severity AND myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 GROUP BY logSeverity.severityId, logSeverity.severity, myBoundedContext.boundedContextName, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myDomain.domainName, logEvents.eventDate ORDER BY logEvents.eventDate DESC, queryType=2, name=Event Summary Layer wise, hiddenName=EVENT SUMMARY LAYER WISE])
+[EL Fine]: sql: 2016-08-26 10:17:27.675--ClientSession(466285130)--Connection(1473023153)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT COUNT(t0.severity), t0.severityId, t0.severity, t1.boundedContextName, t2.layerId, t2.layerName, t3.domainName, t4.eventDate FROM art_bounded_context t5, art_log_events_t t4, art_domain t3, art_log_architecture_layer_m t2, art_bounded_context t1, art_log_severity_m t0 WHERE ((((((((((t2.layerId = t4.layerId) AND (t0.severityId = t4.severity)) AND (t1.alarmPrefix = t4.boundedContextId)) AND (t3.alarmPrefix = t4.domainId)) AND (t1.boundedContextId = t5.boundedContextId)) AND (t4.eventDate >= ?)) AND (t4.eventDate <= ?)) AND t4.boundedContextId LIKE ?) AND t4.domainId LIKE ?) AND (t5.boundedContextId = t3.boundedContextId)) GROUP BY t0.severityId, t0.severity, t1.boundedContextName, t2.layerId, t2.layerName, t3.domainName, t4.eventDate ORDER BY t4.eventDate DESC, 197FFBDF-167D-40F5-B285-6646415D6FA2]
+[EL Finer]: transaction: 2016-08-26 10:17:27.677--ClientSession(466285130)--Connection(1473023153)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.729--ServerSession(1851516305)--Connection(1383513612)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.729--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.729--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.729--UnitOfWork(686352007)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.73--ClientSession(466285130)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.73--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 1429061905
+[EL Finer]: transaction: 2016-08-26 10:17:27.73--ClientSession(1429061905)--Thread(Thread[Test worker,5,main])--acquire unit of work: 786329287
+[EL Finest]: connection: 2016-08-26 10:17:27.73--ServerSession(1851516305)--Connection(221962971)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.73--ClientSession(1429061905)--Connection(221962971)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.73--ClientSession(1429061905)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.733--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=3AFE373D-21F8-4F2E-90EF-A1925A0DD690, jpqlQuery=select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId and e.sessionKey =:sessionKey, queryType=1, name=findBySessionKey, hiddenName=FINDBYSESSIONKEY]
+[EL Finest]: query: 2016-08-26 10:17:27.733--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.733--ClientSession(1429061905)--Connection(1348421105)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [3AFE373D-21F8-4F2E-90EF-A1925A0DD690]
+[EL Finer]: transaction: 2016-08-26 10:17:27.735--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.735--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=3AFE373D-21F8-4F2E-90EF-A1925A0DD690, jpqlQuery=select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId and e.sessionKey =:sessionKey, queryType=1, name=findBySessionKey, hiddenName=FINDBYSESSIONKEY])
+[EL Fine]: sql: 2016-08-26 10:17:27.735--ClientSession(1429061905)--Connection(1348421105)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT dataId, appSessionId, booleanValue, customerId, dataType, dateTimeValue, jsonValue, numberValue, sessionKey, stringValue, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SessionData_T WHERE (((activeStatus = ?) AND (appSessionId = ?)) AND (sessionKey = ?)), 3AFE373D-21F8-4F2E-90EF-A1925A0DD690]
+[EL Finer]: transaction: 2016-08-26 10:17:27.737--ClientSession(1429061905)--Connection(1348421105)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.762--ServerSession(1851516305)--Connection(221962971)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.763--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.763--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.763--UnitOfWork(786329287)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.764--ClientSession(1429061905)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.764--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 388121245
+[EL Finer]: transaction: 2016-08-26 10:17:27.764--ClientSession(388121245)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1245928776
+[EL Finest]: connection: 2016-08-26 10:17:27.764--ServerSession(1851516305)--Connection(211896335)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.765--ClientSession(388121245)--Connection(211896335)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.765--ClientSession(388121245)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.775--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=46B4404C-8168-463D-ADB9-1283F1BF3B20, jpqlQuery=SELECT CONCAT(login.coreContacts.firstName, ' : ', login.coreContacts.lastName, ' : ', logEvents.sessionId, ' : ', logEvents.requestId) AS login_corecontacts_lastname, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logStatus.statusId, logStatus.alarmStatus, myBoundedContext.boundedContextName, logEvents.logeventId, logEvents.alarmId, logEvents.customerId, CONCAT(logEvents.userIpAddress, ':', logEvents.userPort) AS ipPort, CONCAT(logEvents.geoLatitude, ' / ', logEvents.geoLongitude) AS latLong, logEvents.sessionId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.message, logEvents.context, logEvents.eventDateTime, logArchitectureLayer.layerName FROM ArtDomain AS myDomain, ArtLogStatus AS logStatus, ArtLogEventAction AS logEventAction, ArtLogSeverity AS logSeverity, ArtBoundedContext AS myBoundedContext, ArtLogEvents AS logEvents, ArtLogArchitectureLayer AS logArchitectureLayer, Login AS login WHERE logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logStatus.statusId = logEvents.alarmStatus AND login.user.userId = logEvents.userId AND myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logEvents.eventDateTime >= :eventDateTime1 AND logEvents.eventDateTime <= :eventDateTime2 AND logEvents.requestId LIKE :requestId , queryType=2, name=Event Details, hiddenName=EVENT DETAILS]
+[EL Finest]: query: 2016-08-26 10:17:27.775--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.775--ClientSession(388121245)--Connection(634858670)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [46B4404C-8168-463D-ADB9-1283F1BF3B20]
+[EL Finer]: transaction: 2016-08-26 10:17:27.778--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.778--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=46B4404C-8168-463D-ADB9-1283F1BF3B20, jpqlQuery=SELECT CONCAT(login.coreContacts.firstName, ' : ', login.coreContacts.lastName, ' : ', logEvents.sessionId, ' : ', logEvents.requestId) AS login_corecontacts_lastname, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logStatus.statusId, logStatus.alarmStatus, myBoundedContext.boundedContextName, logEvents.logeventId, logEvents.alarmId, logEvents.customerId, CONCAT(logEvents.userIpAddress, ':', logEvents.userPort) AS ipPort, CONCAT(logEvents.geoLatitude, ' / ', logEvents.geoLongitude) AS latLong, logEvents.sessionId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.message, logEvents.context, logEvents.eventDateTime, logArchitectureLayer.layerName FROM ArtDomain AS myDomain, ArtLogStatus AS logStatus, ArtLogEventAction AS logEventAction, ArtLogSeverity AS logSeverity, ArtBoundedContext AS myBoundedContext, ArtLogEvents AS logEvents, ArtLogArchitectureLayer AS logArchitectureLayer, Login AS login WHERE logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logStatus.statusId = logEvents.alarmStatus AND login.user.userId = logEvents.userId AND myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logEvents.eventDateTime >= :eventDateTime1 AND logEvents.eventDateTime <= :eventDateTime2 AND logEvents.requestId LIKE :requestId , queryType=2, name=Event Details, hiddenName=EVENT DETAILS])
+[EL Fine]: sql: 2016-08-26 10:17:27.778--ClientSession(388121245)--Connection(634858670)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(t0.firstName, ?), t0.lastName), ?), t2.sessionId), ?), t2.requestId), t3.domainName, t4.severityId, t4.severity, t5.eventActionId, t5.eventAction, t6.statusId, t6.alarmStatus, t7.boundedContextName, t2.logeventId, t2.alarmId, t2.customerId, CONCAT(CONCAT(t2.userIpAddress, ?), t2.userPort), CONCAT(CONCAT(t2.geoLatitude, ?), t2.geoLongitude), t2.sessionId, t2.requestId, t2.className, t2.methodName, t2.message, t2.context, t2.eventDateTime, t8.layerName FROM art_bounded_context t10, ast_User_T t9, art_log_architecture_layer_m t8, art_bounded_context t7, art_log_status_m t6, art_log_event_action_m t5, art_log_severity_m t4, art_domain t3, art_log_events_t t2, ast_Login_T t1, ast_CoreContacts_T t0 WHERE ((((((((((((t8.layerId = t2.layerId) AND (t5.eventActionId = t2.eventAction)) AND (t4.severityId = t2.severity)) AND (t6.statusId = t2.alarmStatus)) AND (t9.userId = t2.userId)) AND (t7.alarmPrefix = t2.boundedContextId)) AND (t3.alarmPrefix = t2.domainId)) AND (t7.boundedContextId = t10.boundedContextId)) AND (t2.eventDateTime >= ?)) AND (t2.eventDateTime <= ?)) AND t2.requestId LIKE ?) AND (((t9.userId = t1.userId) AND (t10.boundedContextId = t3.boundedContextId)) AND (t0.contactId = t1.contactId))), 46B4404C-8168-463D-ADB9-1283F1BF3B20]
+[EL Finer]: transaction: 2016-08-26 10:17:27.78--ClientSession(388121245)--Connection(634858670)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.805--ServerSession(1851516305)--Connection(211896335)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.805--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.805--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.805--UnitOfWork(1245928776)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.806--ClientSession(388121245)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.806--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 1841357954
+[EL Finer]: transaction: 2016-08-26 10:17:27.806--ClientSession(1841357954)--Thread(Thread[Test worker,5,main])--acquire unit of work: 316295961
+[EL Finest]: connection: 2016-08-26 10:17:27.806--ServerSession(1851516305)--Connection(964190202)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.806--ClientSession(1841357954)--Connection(964190202)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.806--ClientSession(1841357954)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.809--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=875D7F02-AEB2-4F58-835B-C1485616BE0F, jpqlQuery=SELECT employee.empId,employee.empName,employee.empSal,employee.versionId,employee.entityAudit.createdBy,employee.entityAudit.createdDate,employee.entityAudit.updatedBy,employee.entityAudit.updatedDate,employee.systemInfo.activeStatus,employee.systemInfo.txnAccessCode FROM Employee AS employee 
+ 
+ 
+ 
+ , queryType=2, name=qone, hiddenName=QONE]
+[EL Finest]: query: 2016-08-26 10:17:27.809--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.809--ClientSession(1841357954)--Connection(883194414)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [875D7F02-AEB2-4F58-835B-C1485616BE0F]
+[EL Finer]: transaction: 2016-08-26 10:17:27.811--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.811--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=875D7F02-AEB2-4F58-835B-C1485616BE0F, jpqlQuery=SELECT employee.empId,employee.empName,employee.empSal,employee.versionId,employee.entityAudit.createdBy,employee.entityAudit.createdDate,employee.entityAudit.updatedBy,employee.entityAudit.updatedDate,employee.systemInfo.activeStatus,employee.systemInfo.txnAccessCode FROM Employee AS employee 
+ 
+ 
+ 
+ , queryType=2, name=qone, hiddenName=QONE])
+[EL Fine]: sql: 2016-08-26 10:17:27.812--ClientSession(1841357954)--Connection(883194414)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT empId, empName, empSal, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Employee_M, 875D7F02-AEB2-4F58-835B-C1485616BE0F]
+[EL Finer]: transaction: 2016-08-26 10:17:27.813--ClientSession(1841357954)--Connection(883194414)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.838--ServerSession(1851516305)--Connection(964190202)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.839--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.839--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.839--UnitOfWork(316295961)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.839--ClientSession(1841357954)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.839--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 182907345
+[EL Finer]: transaction: 2016-08-26 10:17:27.839--ClientSession(182907345)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1074648558
+[EL Finest]: connection: 2016-08-26 10:17:27.84--ServerSession(1851516305)--Connection(1280843036)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.84--ClientSession(182907345)--Connection(1280843036)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.84--ClientSession(182907345)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.842--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=88A4DDA8-492C-4AF4-8FB1-99F2365D6114, jpqlQuery=SELECT u FROM Login u WHERE u.systemInfo.activeStatus=1 AND u.user.userId IN (SELECT ub.userId FROM UserRoleBridge ub), queryType=1, name=findMappedUser, hiddenName=FINDMAPPEDUSER]
+[EL Finest]: query: 2016-08-26 10:17:27.843--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.843--ClientSession(182907345)--Connection(2018535118)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [88A4DDA8-492C-4AF4-8FB1-99F2365D6114]
+[EL Finer]: transaction: 2016-08-26 10:17:27.845--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.845--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=88A4DDA8-492C-4AF4-8FB1-99F2365D6114, jpqlQuery=SELECT u FROM Login u WHERE u.systemInfo.activeStatus=1 AND u.user.userId IN (SELECT ub.userId FROM UserRoleBridge ub), queryType=1, name=findMappedUser, hiddenName=FINDMAPPEDUSER])
+[EL Fine]: sql: 2016-08-26 10:17:27.845--ClientSession(182907345)--Connection(2018535118)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId)), 88A4DDA8-492C-4AF4-8FB1-99F2365D6114]
+[EL Finer]: transaction: 2016-08-26 10:17:27.847--ClientSession(182907345)--Connection(2018535118)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.872--ServerSession(1851516305)--Connection(1280843036)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.872--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.873--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.873--UnitOfWork(1074648558)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.873--ClientSession(182907345)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.873--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 1529828364
+[EL Finer]: transaction: 2016-08-26 10:17:27.873--ClientSession(1529828364)--Thread(Thread[Test worker,5,main])--acquire unit of work: 3608217
+[EL Finest]: connection: 2016-08-26 10:17:27.873--ServerSession(1851516305)--Connection(513761003)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.873--ClientSession(1529828364)--Connection(513761003)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.874--ClientSession(1529828364)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.884--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=8BE70FA2-F681-42D8-BDB1-970DB076E2D3, jpqlQuery=SELECT zenHealth.monitorId,zenHealth.scheduledDateTime,zenHealth.serverInstanceId,zenHealth.serverIpAddress,zenHealth.totalClass,zenHealth.classLoaded, zenHealth.classUnloaded,zenHealth.gcCollectionTime,zenHealth.gcMemoryName, ((zenHealth.nonHeapCommitted/1024)/1024) AS nonHeapCommitted, (zenHealth.nonHeapUsed/1024)/1024 AS nonHeapUsed, (zenHealth.heapCommitted/1024)/1024 AS heapCommitted, (zenHealth.maxMemory/1024)/1024 AS maxMemory , 100 - ((zenHealth.usedMemory/zenHealth.totalMemory) * 100) AS freeMemory, (zenHealth.heapUsed/1024)/1024 AS heapUsed, (zenHealth.totalMemory/1024)/1024 AS totalMemory, zenHealth.startTime, zenHealth.upTime,zenHealth.cpuTime, (zenHealth.freePhysicalSize/1024)/1024 AS freePhysicalSize, (zenHealth.totalPhysicalMemorySize/1024)/1024 AS totalPhysicalMemorySize, zenHealth.cpuLoadTime, FUNCTION('ROUND',(zenHealth.freeSwapSize/1024)/1024) AS freeSwapSize, zenHealth.systemLoadAverage, FUNCTION('ROUND',(zenHealth.totalSwapSize/1024)/1024) AS totalSwapSize, zenHealth.availableProcessor,zenHealth.totalThread, zenHealth.threadPeakCount,zenHealth.threadStartedCount,zenHealth.threadDaemonCount,zenHealth.threadCpuTime, zenHealth.threadUserTime,zenHealth.cpuLoad, (zenHealth.usedMemory/zenHealth.totalMemory) * 100 AS usedMemory, (zenHealth.usedSwapSize/1024)/1024 AS usedSwapSize, (zenHealth.usedPhysicalMemory /1024)/1024 AS usedPhysicalMemory FROM ZenHealth AS zenHealth ORDER BY zenHealth.scheduledDateTime DESC, queryType=2, name=App Server Memory Usage, hiddenName=APP SERVER MEMORY USAGE]
+[EL Finest]: query: 2016-08-26 10:17:27.885--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.885--ClientSession(1529828364)--Connection(524597460)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [8BE70FA2-F681-42D8-BDB1-970DB076E2D3]
+[EL Finer]: transaction: 2016-08-26 10:17:27.887--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.887--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=8BE70FA2-F681-42D8-BDB1-970DB076E2D3, jpqlQuery=SELECT zenHealth.monitorId,zenHealth.scheduledDateTime,zenHealth.serverInstanceId,zenHealth.serverIpAddress,zenHealth.totalClass,zenHealth.classLoaded, zenHealth.classUnloaded,zenHealth.gcCollectionTime,zenHealth.gcMemoryName, ((zenHealth.nonHeapCommitted/1024)/1024) AS nonHeapCommitted, (zenHealth.nonHeapUsed/1024)/1024 AS nonHeapUsed, (zenHealth.heapCommitted/1024)/1024 AS heapCommitted, (zenHealth.maxMemory/1024)/1024 AS maxMemory , 100 - ((zenHealth.usedMemory/zenHealth.totalMemory) * 100) AS freeMemory, (zenHealth.heapUsed/1024)/1024 AS heapUsed, (zenHealth.totalMemory/1024)/1024 AS totalMemory, zenHealth.startTime, zenHealth.upTime,zenHealth.cpuTime, (zenHealth.freePhysicalSize/1024)/1024 AS freePhysicalSize, (zenHealth.totalPhysicalMemorySize/1024)/1024 AS totalPhysicalMemorySize, zenHealth.cpuLoadTime, FUNCTION('ROUND',(zenHealth.freeSwapSize/1024)/1024) AS freeSwapSize, zenHealth.systemLoadAverage, FUNCTION('ROUND',(zenHealth.totalSwapSize/1024)/1024) AS totalSwapSize, zenHealth.availableProcessor,zenHealth.totalThread, zenHealth.threadPeakCount,zenHealth.threadStartedCount,zenHealth.threadDaemonCount,zenHealth.threadCpuTime, zenHealth.threadUserTime,zenHealth.cpuLoad, (zenHealth.usedMemory/zenHealth.totalMemory) * 100 AS usedMemory, (zenHealth.usedSwapSize/1024)/1024 AS usedSwapSize, (zenHealth.usedPhysicalMemory /1024)/1024 AS usedPhysicalMemory FROM ZenHealth AS zenHealth ORDER BY zenHealth.scheduledDateTime DESC, queryType=2, name=App Server Memory Usage, hiddenName=APP SERVER MEMORY USAGE])
+[EL Fine]: sql: 2016-08-26 10:17:27.887--ClientSession(1529828364)--Connection(524597460)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT monitorId, scheduledDateTime, serverInstanceId, serverIpAddress, totalClass, classLoaded, classUnloaded, gcCollectionTime, gcMemoryName, ((nonHeapCommitted / ?) / ?), ((nonHeapUsed / ?) / ?), ((heapCommitted / ?) / ?), ((maxMemory / ?) / ?), (? - ((usedMemory / totalMemory) * ?)), ((heapUsed / ?) / ?), ((totalMemory / ?) / ?), startTime, upTime, cpuTime, ((freePhysicalSize / ?) / ?), ((totalPhysicalMemorySize / ?) / ?), cpuLoadTime, ROUND(((freeSwapSize / ?) / ?)), systemLoadAverage, ROUND(((totalSwapSize / ?) / ?)), availableProcessor, totalThread, threadPeakCount, threadStartedCount, threadDaemonCount, threadCpuTime, threadUserTime, cpuLoad, ((usedMemory / totalMemory) * ?), ((usedSwapSize / ?) / ?), ((usedPhysicalMemory / ?) / ?) FROM zen_health ORDER BY scheduledDateTime DESC, 8BE70FA2-F681-42D8-BDB1-970DB076E2D3]
+[EL Finer]: transaction: 2016-08-26 10:17:27.889--ClientSession(1529828364)--Connection(524597460)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.939--ServerSession(1851516305)--Connection(513761003)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.94--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.94--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.94--UnitOfWork(3608217)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.94--ClientSession(1529828364)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.94--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 191160237
+[EL Finer]: transaction: 2016-08-26 10:17:27.941--ClientSession(191160237)--Thread(Thread[Test worker,5,main])--acquire unit of work: 194567347
+[EL Finest]: connection: 2016-08-26 10:17:27.941--ServerSession(1851516305)--Connection(1623290295)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.941--ClientSession(191160237)--Connection(1623290295)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.941--ClientSession(191160237)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:27.946--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=910B4DD5-1336-4CFD-BE89-0BC67B9E62CE, jpqlQuery=SELECT zenHealthStatus.healthId,zenHealthStatus.scheduledDateTime,zenHealthStatus.serverInstanceId,zenHealthStatus.serverIpAddress, FUNCTION('ROUND',100 - (zenHealthStatus.usedSpace/zenHealthStatus.totalSpace )* 100) AS freeSpace, FUNCTION('ROUND',(zenHealthStatus.usedSpace/zenHealthStatus.totalSpace )* 100 ) AS usedSpace, FUNCTION('ROUND',(zenHealthStatus.totalSpace/1024)/1024) AS totalSpace, zenHealthStatus.status FROM ZenHealthStatus AS zenHealthStatus ORDER BY zenHealthStatus.scheduledDateTime DESC, queryType=2, name=System Memory Usage, hiddenName=SYSTEM MEMORY USAGE]
+[EL Finest]: query: 2016-08-26 10:17:27.946--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:27.946--ClientSession(191160237)--Connection(1948217583)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [910B4DD5-1336-4CFD-BE89-0BC67B9E62CE]
+[EL Finer]: transaction: 2016-08-26 10:17:27.949--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:27.949--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=910B4DD5-1336-4CFD-BE89-0BC67B9E62CE, jpqlQuery=SELECT zenHealthStatus.healthId,zenHealthStatus.scheduledDateTime,zenHealthStatus.serverInstanceId,zenHealthStatus.serverIpAddress, FUNCTION('ROUND',100 - (zenHealthStatus.usedSpace/zenHealthStatus.totalSpace )* 100) AS freeSpace, FUNCTION('ROUND',(zenHealthStatus.usedSpace/zenHealthStatus.totalSpace )* 100 ) AS usedSpace, FUNCTION('ROUND',(zenHealthStatus.totalSpace/1024)/1024) AS totalSpace, zenHealthStatus.status FROM ZenHealthStatus AS zenHealthStatus ORDER BY zenHealthStatus.scheduledDateTime DESC, queryType=2, name=System Memory Usage, hiddenName=SYSTEM MEMORY USAGE])
+[EL Fine]: sql: 2016-08-26 10:17:27.949--ClientSession(191160237)--Connection(1948217583)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT healthId, scheduledDateTime, serverInstanceId, serverIpAddress, ROUND((? - ((usedSpace / totalSpace) * ?))), ROUND(((usedSpace / totalSpace) * ?)), ROUND(((totalSpace / ?) / ?)), status FROM zen_health_status ORDER BY scheduledDateTime DESC, 910B4DD5-1336-4CFD-BE89-0BC67B9E62CE]
+[EL Finer]: transaction: 2016-08-26 10:17:27.951--ClientSession(191160237)--Connection(1948217583)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.99--ServerSession(1851516305)--Connection(1623290295)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.99--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:27.991--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:27.991--UnitOfWork(194567347)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:27.991--ClientSession(191160237)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:27.991--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 1974808062
+[EL Finer]: transaction: 2016-08-26 10:17:27.991--ClientSession(1974808062)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1239333649
+[EL Finest]: connection: 2016-08-26 10:17:27.992--ServerSession(1851516305)--Connection(1036746490)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:27.992--ClientSession(1974808062)--Connection(1036746490)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:27.992--ClientSession(1974808062)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.001--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=9BB5B947-7F11-404D-A488-DE1A5BD5AD61, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logEvents.eventDate, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEventAction.eventActionId, logEventAction.eventAction FROM ArtLogEvents AS logEvents, ArtLogArchitectureLayer AS logArchitectureLayer, ArtBoundedContext AS myBoundedContext, ArtLogSeverity AS logSeverity, ArtDomain AS myDomain, ArtLogEventAction AS logEventAction WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEventAction.eventActionId, logEventAction.eventAction, logEvents.eventDate ORDER BY logEvents.eventDate DESC , queryType=2, name=Event Summary Action wise, hiddenName=EVENT SUMMARY ACTION WISE]
+[EL Finest]: query: 2016-08-26 10:17:28.001--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.001--ClientSession(1974808062)--Connection(1862299352)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [9BB5B947-7F11-404D-A488-DE1A5BD5AD61]
+[EL Finer]: transaction: 2016-08-26 10:17:28.004--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.004--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=9BB5B947-7F11-404D-A488-DE1A5BD5AD61, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logEvents.eventDate, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEventAction.eventActionId, logEventAction.eventAction FROM ArtLogEvents AS logEvents, ArtLogArchitectureLayer AS logArchitectureLayer, ArtBoundedContext AS myBoundedContext, ArtLogSeverity AS logSeverity, ArtDomain AS myDomain, ArtLogEventAction AS logEventAction WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEventAction.eventActionId, logEventAction.eventAction, logEvents.eventDate ORDER BY logEvents.eventDate DESC , queryType=2, name=Event Summary Action wise, hiddenName=EVENT SUMMARY ACTION WISE])
+[EL Fine]: sql: 2016-08-26 10:17:28.004--ClientSession(1974808062)--Connection(1862299352)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT COUNT(t0.severity), t1.eventDate, t2.layerId, t2.layerName, t3.boundedContextName, t0.severityId, t0.severity, t4.domainName, t5.eventActionId, t5.eventAction FROM art_log_event_action_m t5, art_domain t4, art_bounded_context t3, art_log_architecture_layer_m t2, art_log_events_t t1, art_log_severity_m t0 WHERE (((((((((((t3.alarmPrefix = t1.boundedContextId) AND (t4.alarmPrefix = t1.domainId)) AND (t2.layerId = t1.layerId)) AND (t5.eventActionId = t1.eventAction)) AND (t0.severityId = t1.severity)) AND (t1.eventDate >= ?)) AND (t1.eventDate <= ?)) AND t1.boundedContextId LIKE ?) AND t1.domainId LIKE ?) AND (t2.layerId >= ?)) AND (t2.layerId <= ?)) GROUP BY t2.layerId, t2.layerName, t3.boundedContextName, t0.severityId, t0.severity, t4.domainName, t5.eventActionId, t5.eventAction, t1.eventDate ORDER BY t1.eventDate DESC, 9BB5B947-7F11-404D-A488-DE1A5BD5AD61]
+[EL Finer]: transaction: 2016-08-26 10:17:28.016--ClientSession(1974808062)--Connection(1862299352)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.04--ServerSession(1851516305)--Connection(1036746490)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.04--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.04--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.04--UnitOfWork(1239333649)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.04--ClientSession(1974808062)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:28.041--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 870701264
+[EL Finer]: transaction: 2016-08-26 10:17:28.041--ClientSession(870701264)--Thread(Thread[Test worker,5,main])--acquire unit of work: 922573390
+[EL Finest]: connection: 2016-08-26 10:17:28.041--ServerSession(1851516305)--Connection(859034390)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.041--ClientSession(870701264)--Connection(859034390)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.041--ClientSession(870701264)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.05--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=AE68940D-5C39-4501-9D98-AF190084303A, jpqlQuery=SELECT CONCAT(login.coreContacts.firstName, ' : ', abcRequestDetails.ipAddress, ' : ', abcRequestDetails.requestId, ' : ', abcRequestDetails.appSessionId) AS login_corecontacts_firstname, abcRequestDetails.requestId, abcRequestDetails.className, abcRequestDetails.requestTime, abcRequestDetails.requestMethod, abcRequestDetails.httpStatus, abcRequestDetails.returnStatus, abcRequestDetails.executionTime, abcRequestDetails.methodName, abcRequestDetails.startTime, abcRequestDetails.endTime, abcRequestDetails.typeofClass, abcRequestDetails.callSeqId, abcRequestDetails.exceptionId, abcRequestDetails.userId, abcRequestDetails.appSessionId FROM ZenRequestDetails AS abcRequestDetails LEFT OUTER JOIN Login AS login WHERE login.user.userId = abcRequestDetails.userId AND abcRequestDetails.requestTime >= :requestTime AND abcRequestDetails.requestTime <= :updatedDate ORDER BY abcRequestDetails.requestTime DESC, abcRequestDetails.requestId, abcRequestDetails.callSeqId ASC , queryType=2, name=Request Details, hiddenName=REQUEST DETAILS]
+[EL Finest]: query: 2016-08-26 10:17:28.05--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.05--ClientSession(870701264)--Connection(744577636)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [AE68940D-5C39-4501-9D98-AF190084303A]
+[EL Finer]: transaction: 2016-08-26 10:17:28.053--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.053--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=AE68940D-5C39-4501-9D98-AF190084303A, jpqlQuery=SELECT CONCAT(login.coreContacts.firstName, ' : ', abcRequestDetails.ipAddress, ' : ', abcRequestDetails.requestId, ' : ', abcRequestDetails.appSessionId) AS login_corecontacts_firstname, abcRequestDetails.requestId, abcRequestDetails.className, abcRequestDetails.requestTime, abcRequestDetails.requestMethod, abcRequestDetails.httpStatus, abcRequestDetails.returnStatus, abcRequestDetails.executionTime, abcRequestDetails.methodName, abcRequestDetails.startTime, abcRequestDetails.endTime, abcRequestDetails.typeofClass, abcRequestDetails.callSeqId, abcRequestDetails.exceptionId, abcRequestDetails.userId, abcRequestDetails.appSessionId FROM ZenRequestDetails AS abcRequestDetails LEFT OUTER JOIN Login AS login WHERE login.user.userId = abcRequestDetails.userId AND abcRequestDetails.requestTime >= :requestTime AND abcRequestDetails.requestTime <= :updatedDate ORDER BY abcRequestDetails.requestTime DESC, abcRequestDetails.requestId, abcRequestDetails.callSeqId ASC , queryType=2, name=Request Details, hiddenName=REQUEST DETAILS])
+[EL Fine]: sql: 2016-08-26 10:17:28.053--ClientSession(870701264)--Connection(744577636)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(t0.firstName, ?), t2.ipAddress), ?), t2.requestId), ?), t2.appSessionId), t2.requestId, t2.className, t2.requestTime, t2.requestMethod, t2.httpStatus, t2.returnStatus, t2.executionTime, t2.methodName, t2.startTime, t2.endTime, t2.typeofClass, t2.callSeqId, t2.exceptionId, t2.userId, t2.appSessionId FROM ast_User_T t3, zen_request_details t2, ast_Login_T t1, ast_CoreContacts_T t0 WHERE ((((t3.userId = t2.userId) AND (t2.requestTime >= ?)) AND (t2.requestTime <= ?)) AND ((t3.userId = t1.userId) AND (t0.contactId = t1.contactId))) ORDER BY t2.requestTime DESC, t2.requestId, t2.callSeqId ASC, AE68940D-5C39-4501-9D98-AF190084303A]
+[EL Finer]: transaction: 2016-08-26 10:17:28.055--ClientSession(870701264)--Connection(744577636)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.109--ServerSession(1851516305)--Connection(859034390)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.109--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.11--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.11--UnitOfWork(922573390)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.11--ClientSession(870701264)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:28.111--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 2407964
+[EL Finer]: transaction: 2016-08-26 10:17:28.111--ClientSession(2407964)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1815945302
+[EL Finest]: connection: 2016-08-26 10:17:28.111--ServerSession(1851516305)--Connection(555099550)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.111--ClientSession(2407964)--Connection(555099550)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.111--ClientSession(2407964)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.122--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=B6F4157F-BB68-4166-A684-D156502FB6F6, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEventAction.eventActionId, logEventAction.eventAction, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEvents.eventDate, logEvents.className FROM ArtLogArchitectureLayer AS logArchitectureLayer, ArtLogEventAction AS logEventAction, ArtBoundedContext AS myBoundedContext, ArtLogSeverity AS logSeverity, ArtDomain AS myDomain, ArtLogEvents AS logEvents WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 AND logEventAction.eventActionId >= :eventActionId AND logEventAction.eventActionId <= :eventActionId1 GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEventAction.eventActionId, logEventAction.eventAction, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEvents.eventDate, logEvents.className , queryType=2, name=Event Summary Class wise, hiddenName=EVENT SUMMARY CLASS WISE]
+[EL Finest]: query: 2016-08-26 10:17:28.122--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.123--ClientSession(2407964)--Connection(271387326)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [B6F4157F-BB68-4166-A684-D156502FB6F6]
+[EL Finer]: transaction: 2016-08-26 10:17:28.125--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.126--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=B6F4157F-BB68-4166-A684-D156502FB6F6, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEventAction.eventActionId, logEventAction.eventAction, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEvents.eventDate, logEvents.className FROM ArtLogArchitectureLayer AS logArchitectureLayer, ArtLogEventAction AS logEventAction, ArtBoundedContext AS myBoundedContext, ArtLogSeverity AS logSeverity, ArtDomain AS myDomain, ArtLogEvents AS logEvents WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDate >= :eventDate AND logEvents.eventDate <= :eventDate1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 AND logEventAction.eventActionId >= :eventActionId AND logEventAction.eventActionId <= :eventActionId1 GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEventAction.eventActionId, logEventAction.eventAction, myBoundedContext.boundedContextName, logSeverity.severityId, logSeverity.severity, myDomain.domainName, logEvents.eventDate, logEvents.className , queryType=2, name=Event Summary Class wise, hiddenName=EVENT SUMMARY CLASS WISE])
+[EL Fine]: sql: 2016-08-26 10:17:28.126--ClientSession(2407964)--Connection(271387326)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT COUNT(t0.severity), t1.layerId, t1.layerName, t2.eventActionId, t2.eventAction, t3.boundedContextName, t0.severityId, t0.severity, t4.domainName, t5.eventDate, t5.className FROM art_bounded_context t6, art_log_events_t t5, art_domain t4, art_bounded_context t3, art_log_event_action_m t2, art_log_architecture_layer_m t1, art_log_severity_m t0 WHERE (((((((((((((((t3.alarmPrefix = t5.boundedContextId) AND (t4.alarmPrefix = t5.domainId)) AND (t3.boundedContextId = t6.boundedContextId)) AND (t1.layerId = t5.layerId)) AND (t2.eventActionId = t5.eventAction)) AND (t0.severityId = t5.severity)) AND (t5.eventDate >= ?)) AND (t5.eventDate <= ?)) AND t5.boundedContextId LIKE ?) AND t5.domainId LIKE ?) AND (t1.layerId >= ?)) AND (t1.layerId <= ?)) AND (t2.eventActionId >= ?)) AND (t2.eventActionId <= ?)) AND (t6.boundedContextId = t4.boundedContextId)) GROUP BY t1.layerId, t1.layerName, t2.eventActionId, t2.eventAction, t3.boundedContextName, t0.severityId, t0.severity, t4.domainName, t5.eventDate, t5.className, B6F4157F-BB68-4166-A684-D156502FB6F6]
+[EL Finer]: transaction: 2016-08-26 10:17:28.128--ClientSession(2407964)--Connection(271387326)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.176--ServerSession(1851516305)--Connection(555099550)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.177--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.177--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.177--UnitOfWork(1815945302)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.177--ClientSession(2407964)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:28.178--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 303673453
+[EL Finer]: transaction: 2016-08-26 10:17:28.178--ClientSession(303673453)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1418579299
+[EL Finest]: connection: 2016-08-26 10:17:28.178--ServerSession(1851516305)--Connection(698829299)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.178--ClientSession(303673453)--Connection(698829299)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.178--ClientSession(303673453)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.181--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=C6A7557D-C24D-4954-8998-EE80BE2CD063, jpqlQuery=SELECT u FROM Login u WHERE u.systemInfo.activeStatus=1 AND u.user.userId NOT IN (SELECT ub.userId FROM UserRoleBridge ub), queryType=1, name=findUnMappedUser, hiddenName=FINDUNMAPPEDUSER]
+[EL Finest]: query: 2016-08-26 10:17:28.181--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.182--ClientSession(303673453)--Connection(2021983381)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [C6A7557D-C24D-4954-8998-EE80BE2CD063]
+[EL Finer]: transaction: 2016-08-26 10:17:28.184--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.184--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=C6A7557D-C24D-4954-8998-EE80BE2CD063, jpqlQuery=SELECT u FROM Login u WHERE u.systemInfo.activeStatus=1 AND u.user.userId NOT IN (SELECT ub.userId FROM UserRoleBridge ub), queryType=1, name=findUnMappedUser, hiddenName=FINDUNMAPPEDUSER])
+[EL Fine]: sql: 2016-08-26 10:17:28.184--ClientSession(303673453)--Connection(2021983381)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT t0.loginPk, t0.failedLoginAttempts, t0.loginId, t0.serverAuthImage, t0.serverAuthText, t0.versionId, t0.createdBy, t0.createdDate, t0.updatedBy, t0.updatedDate, t0.activeStatus, t0.txnAccessCode, t0.contactId, t0.userId FROM ast_Login_T t0, ast_User_T t1 WHERE (((t0.activeStatus = ?) AND t1.userId NOT IN (SELECT t2.userId FROM ast_UserRoleBridge_T t2)) AND (t1.userId = t0.userId)), C6A7557D-C24D-4954-8998-EE80BE2CD063]
+[EL Finer]: transaction: 2016-08-26 10:17:28.186--ClientSession(303673453)--Connection(2021983381)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.21--ServerSession(1851516305)--Connection(698829299)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.211--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.211--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.211--UnitOfWork(1418579299)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.211--ClientSession(303673453)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:28.212--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 804578842
+[EL Finer]: transaction: 2016-08-26 10:17:28.212--ClientSession(804578842)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1999555982
+[EL Finest]: connection: 2016-08-26 10:17:28.212--ServerSession(1851516305)--Connection(565797571)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.212--ClientSession(804578842)--Connection(565797571)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.212--ClientSession(804578842)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.22--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=CD9E7483-1817-4AF1-A5B7-5F76F47DE2A1, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, 'Request' AS logevents_entityaudit_createdby, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logEvents.userId, logEvents.eventDate, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logEvents.logeventId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.eventDateTime FROM ArtLogArchitectureLayer AS logArchitectureLayer, ArtBoundedContext AS myBoundedContext, ArtDomain AS myDomain, ArtLogSeverity AS logSeverity, ArtLogEventAction AS logEventAction, ArtLogEvents AS logEvents WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDateTime >= :eventDateTime AND logEvents.eventDateTime <= :eventDateTime1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 AND logEventAction.eventActionId >= :eventActionId AND logEventAction.eventActionId <= :eventActionId1 AND logEvents.className LIKE :className GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEvents.userId, myBoundedContext.boundedContextName, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logEvents.logeventId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.eventDateTime ORDER BY logEvents.eventDateTime DESC , queryType=2, name=Event Summary, hiddenName=EVENT SUMMARY]
+[EL Finest]: query: 2016-08-26 10:17:28.221--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.221--ClientSession(804578842)--Connection(71268383)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [CD9E7483-1817-4AF1-A5B7-5F76F47DE2A1]
+[EL Finer]: transaction: 2016-08-26 10:17:28.223--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.223--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=CD9E7483-1817-4AF1-A5B7-5F76F47DE2A1, jpqlQuery=SELECT COUNT(logSeverity.severity) AS logseverity_severity, 'Request' AS logevents_entityaudit_createdby, logArchitectureLayer.layerId, logArchitectureLayer.layerName, myBoundedContext.boundedContextName, logEvents.userId, logEvents.eventDate, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logEvents.logeventId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.eventDateTime FROM ArtLogArchitectureLayer AS logArchitectureLayer, ArtBoundedContext AS myBoundedContext, ArtDomain AS myDomain, ArtLogSeverity AS logSeverity, ArtLogEventAction AS logEventAction, ArtLogEvents AS logEvents WHERE myBoundedContext.alarmPrefix = logEvents.boundedContextId AND myDomain.alarmPrefix = logEvents.domainId AND myBoundedContext.boundedContextId = myDomain.artBoundedContext.boundedContextId AND logArchitectureLayer.layerId = logEvents.layerId AND logEventAction.eventActionId = logEvents.eventAction AND logSeverity.severityId = logEvents.severity AND logEvents.eventDateTime >= :eventDateTime AND logEvents.eventDateTime <= :eventDateTime1 AND logEvents.boundedContextId LIKE :boundedContextId1 AND logEvents.domainId LIKE :domainId1 AND logArchitectureLayer.layerId >= :layerId AND logArchitectureLayer.layerId <= :layerId1 AND logEventAction.eventActionId >= :eventActionId AND logEventAction.eventActionId <= :eventActionId1 AND logEvents.className LIKE :className GROUP BY logArchitectureLayer.layerId, logArchitectureLayer.layerName, logEvents.userId, myBoundedContext.boundedContextName, myDomain.domainName, logSeverity.severityId, logSeverity.severity, logEventAction.eventActionId, logEventAction.eventAction, logEvents.logeventId, logEvents.requestId, logEvents.className, logEvents.methodName, logEvents.eventDateTime ORDER BY logEvents.eventDateTime DESC , queryType=2, name=Event Summary, hiddenName=EVENT SUMMARY])
+[EL Fine]: sql: 2016-08-26 10:17:28.224--ClientSession(804578842)--Connection(71268383)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT COUNT(t0.severity), ?, t1.layerId, t1.layerName, t2.boundedContextName, t3.userId, t3.eventDate, t4.domainName, t0.severityId, t0.severity, t5.eventActionId, t5.eventAction, t3.logeventId, t3.requestId, t3.className, t3.methodName, t3.eventDateTime FROM art_bounded_context t6, art_log_event_action_m t5, art_domain t4, art_log_events_t t3, art_bounded_context t2, art_log_architecture_layer_m t1, art_log_severity_m t0 WHERE ((((((((((((((((t2.alarmPrefix = t3.boundedContextId) AND (t4.alarmPrefix = t3.domainId)) AND (t2.boundedContextId = t6.boundedContextId)) AND (t1.layerId = t3.layerId)) AND (t5.eventActionId = t3.eventAction)) AND (t0.severityId = t3.severity)) AND (t3.eventDateTime >= ?)) AND (t3.eventDateTime <= ?)) AND t3.boundedContextId LIKE ?) AND t3.domainId LIKE ?) AND (t1.layerId >= ?)) AND (t1.layerId <= ?)) AND (t5.eventActionId >= ?)) AND (t5.eventActionId <= ?)) AND t3.className LIKE ?) AND (t6.boundedContextId = t4.boundedContextId)) GROUP BY t1.layerId, t1.layerName, t3.userId, t2.boundedContextName, t4.domainName, t0.severityId, t0.severity, t5.eventActionId, t5.eventAction, t3.logeventId, t3.requestId, t3.className, t3.methodName, t3.eventDateTime ORDER BY t3.eventDateTime DESC, CD9E7483-1817-4AF1-A5B7-5F76F47DE2A1]
+[EL Finer]: transaction: 2016-08-26 10:17:28.225--ClientSession(804578842)--Connection(71268383)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.253--ServerSession(1851516305)--Connection(565797571)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.253--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.253--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.254--UnitOfWork(1999555982)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.254--ClientSession(804578842)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:28.254--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 905566177
+[EL Finer]: transaction: 2016-08-26 10:17:28.254--ClientSession(905566177)--Thread(Thread[Test worker,5,main])--acquire unit of work: 634130550
+[EL Finest]: connection: 2016-08-26 10:17:28.254--ServerSession(1851516305)--Connection(2018297436)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.254--ClientSession(905566177)--Connection(2018297436)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.255--ClientSession(905566177)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:28.256--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--Merge clone with references AwsQuery [queryId=FB7BCB9E-BDF9-439F-A5E8-89BD80A7DE38, jpqlQuery=select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId, queryType=1, name=findByAppSessionId, hiddenName=FINDBYAPPSESSIONID]
+[EL Finest]: query: 2016-08-26 10:17:28.257--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=ArtQuery )
+[EL Fine]: sql: 2016-08-26 10:17:28.257--ClientSession(905566177)--Connection(74483418)--Thread(Thread[Test worker,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE (query_id = ?)
+	bind => [FB7BCB9E-BDF9-439F-A5E8-89BD80A7DE38]
+[EL Finer]: transaction: 2016-08-26 10:17:28.259--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:28.259--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(AwsQuery [queryId=FB7BCB9E-BDF9-439F-A5E8-89BD80A7DE38, jpqlQuery=select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId, queryType=1, name=findByAppSessionId, hiddenName=FINDBYAPPSESSIONID])
+[EL Fine]: sql: 2016-08-26 10:17:28.259--ClientSession(905566177)--Connection(74483418)--Thread(Thread[Test worker,5,main])--UPDATE art_query SET sql_query = ? WHERE (query_id = ?)
+	bind => [SELECT dataId, appSessionId, booleanValue, customerId, dataType, dateTimeValue, jsonValue, numberValue, sessionKey, stringValue, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SessionData_T WHERE ((activeStatus = ?) AND (appSessionId = ?)), FB7BCB9E-BDF9-439F-A5E8-89BD80A7DE38]
+[EL Finer]: transaction: 2016-08-26 10:17:28.26--ClientSession(905566177)--Connection(74483418)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:28.287--ServerSession(1851516305)--Connection(2018297436)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:28.287--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:28.287--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:28.288--UnitOfWork(634130550)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:28.288--ClientSession(905566177)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:34.431--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 772848614
+[EL Finer]: transaction: 2016-08-26 10:17:34.431--ClientSession(772848614)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1285558442
+[EL Finest]: connection: 2016-08-26 10:17:34.431--ServerSession(1851516305)--Connection(547762227)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.431--ClientSession(772848614)--Connection(547762227)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.431--ClientSession(772848614)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:34.443--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--persist() operation called on: .
+[EL Finest]: sequencing: 2016-08-26 10:17:34.444--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--assign sequence to the object (A42159F7-4FF6-411B-8BD2-C9BBA4429D9D -> )
+Fri Aug 26 10:17:34 UTC 2016|Unknown Alarm = ABSAA322100200 Alarm Split = ABS-AA-3-2-2-100-200
+[EL Finer]: transaction: 2016-08-26 10:17:34.445--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:34.446--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery()
+[EL Fine]: sql: 2016-08-26 10:17:34.446--ClientSession(772848614)--Connection(317632741)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_JwtConfig_M (configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A42159F7-4FF6-411B-8BD2-C9BBA4429D9D, 2016-08-26 07:17:42.46, omEz3Mn8oYjzU7NepYXZMJwsqPV7GG62qGbKzfidE1WvVaQ0Lw, GfPPBj79yoWnf4OGR1fzwCwVgwIVCCRUoQ0VnzVovMm70U07Fn, 1, AAAAA, 2016-08-26 10:17:34.341, AAAAA, 2016-08-26 10:17:34.341, 1, 51000]
+[EL Finer]: transaction: 2016-08-26 10:17:34.448--ClientSession(772848614)--Connection(317632741)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.53--ServerSession(1851516305)--Connection(547762227)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.531--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.531--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:34.531--UnitOfWork(1285558442)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:34.532--ClientSession(772848614)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:34.556--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 2091416864
+[EL Finer]: transaction: 2016-08-26 10:17:34.556--ClientSession(2091416864)--Thread(Thread[Test worker,5,main])--acquire unit of work: 430899152
+[EL Finest]: connection: 2016-08-26 10:17:34.556--ServerSession(1851516305)--Connection(807189980)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.556--ClientSession(2091416864)--Connection(807189980)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.556--ClientSession(2091416864)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-08-26 10:17:34.558--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-08-26 10:17:34.558--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-08-26 10:17:34.559--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="JwtConfig.findById" referenceClass=JwtConfig sql="SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE ((activeStatus = ?) AND (configId = ?))")
+[EL Fine]: sql: 2016-08-26 10:17:34.559--ClientSession(2091416864)--Connection(234362213)--Thread(Thread[Test worker,5,main])--SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE ((activeStatus = ?) AND (configId = ?))
+	bind => [1, A42159F7-4FF6-411B-8BD2-C9BBA4429D9D]
+Fri Aug 26 10:17:34 UTC 2016|Unknown Alarm = ABSAA324100200 Alarm Split = ABS-AA-3-2-4-100-200
+[EL Finer]: transaction: 2016-08-26 10:17:34.562--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.563--ClientSession(2091416864)--Connection(234362213)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.564--ServerSession(1851516305)--Connection(807189980)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.564--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.564--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:34.564--UnitOfWork(430899152)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:34.564--ClientSession(2091416864)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:34.565--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 2054133816
+[EL Finer]: transaction: 2016-08-26 10:17:34.565--ClientSession(2054133816)--Thread(Thread[Test worker,5,main])--acquire unit of work: 879936340
+[EL Finest]: connection: 2016-08-26 10:17:34.565--ServerSession(1851516305)--Connection(1517673138)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.565--ClientSession(2054133816)--Connection(1517673138)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.565--ClientSession(2054133816)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-08-26 10:17:34.569--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--Merge clone with references 
+[EL Finest]: query: 2016-08-26 10:17:34.569--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=JwtConfig )
+[EL Fine]: sql: 2016-08-26 10:17:34.57--ClientSession(2054133816)--Connection(1012528335)--Thread(Thread[Test worker,5,main])--SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE (configId = ?)
+	bind => [A42159F7-4FF6-411B-8BD2-C9BBA4429D9D]
+Fri Aug 26 10:17:34 UTC 2016|Unknown Alarm = ABSAA321100200 Alarm Split = ABS-AA-3-2-1-100-200
+[EL Finer]: transaction: 2016-08-26 10:17:34.573--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:34.574--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery()
+[EL Fine]: sql: 2016-08-26 10:17:34.575--ClientSession(2054133816)--Connection(1012528335)--Thread(Thread[Test worker,5,main])--UPDATE ast_JwtConfig_M SET expiration = ?, jwtAlgorithm = ?, tokenKey = ?, versionId = ? WHERE ((configId = ?) AND (versionId = ?))
+	bind => [2016-08-26 07:17:42.48, CsIEW6SceIJCDggFTtQHlSnXZUMVMCWe20YGoyQLhestKRvPo0, mTv8VRCG5SQdsA1vvuzW19MfV6Tgw2iC5DRh8GynGiqXhIXVNX, 2, A42159F7-4FF6-411B-8BD2-C9BBA4429D9D, 1]
+[EL Finer]: transaction: 2016-08-26 10:17:34.576--ClientSession(2054133816)--Connection(1012528335)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.607--ServerSession(1851516305)--Connection(1517673138)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.607--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.607--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:34.608--UnitOfWork(879936340)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:34.608--ClientSession(2054133816)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:34.629--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 1296254939
+[EL Finer]: transaction: 2016-08-26 10:17:34.63--ClientSession(1296254939)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2082644605
+[EL Finest]: connection: 2016-08-26 10:17:34.63--ServerSession(1851516305)--Connection(1171913782)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.63--ClientSession(1296254939)--Connection(1171913782)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.63--ClientSession(1296254939)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-08-26 10:17:34.631--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-08-26 10:17:34.631--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-08-26 10:17:34.631--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="JwtConfig.findById" referenceClass=JwtConfig sql="SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE ((activeStatus = ?) AND (configId = ?))")
+[EL Fine]: sql: 2016-08-26 10:17:34.631--ClientSession(1296254939)--Connection(1672401656)--Thread(Thread[Test worker,5,main])--SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE ((activeStatus = ?) AND (configId = ?))
+	bind => [1, A42159F7-4FF6-411B-8BD2-C9BBA4429D9D]
+Fri Aug 26 10:17:34 UTC 2016|Unknown Alarm = ABSAA324100200 Alarm Split = ABS-AA-3-2-4-100-200
+[EL Finer]: transaction: 2016-08-26 10:17:34.633--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.634--ClientSession(1296254939)--Connection(1672401656)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.634--ServerSession(1851516305)--Connection(1171913782)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.637--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.637--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:34.638--UnitOfWork(2082644605)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:34.638--ClientSession(1296254939)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-08-26 10:17:34.687--ServerSession(1851516305)--Thread(Thread[Test worker,5,main])--client acquired: 158064882
+[EL Finer]: transaction: 2016-08-26 10:17:34.687--ClientSession(158064882)--Thread(Thread[Test worker,5,main])--acquire unit of work: 159200435
+[EL Finest]: connection: 2016-08-26 10:17:34.687--ServerSession(1851516305)--Connection(2064570530)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.687--ClientSession(158064882)--Connection(2064570530)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.687--ClientSession(158064882)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-08-26 10:17:34.689--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readJwtConfig" referenceClass=JwtConfig sql="SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE (configId = ?)")
+[EL Fine]: sql: 2016-08-26 10:17:34.689--ClientSession(158064882)--Connection(650956404)--Thread(Thread[Test worker,5,main])--SELECT configId, expiration, jwtAlgorithm, tokenKey, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_JwtConfig_M WHERE (configId = ?)
+	bind => [A42159F7-4FF6-411B-8BD2-C9BBA4429D9D]
+[EL Finest]: transaction: 2016-08-26 10:17:34.691--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--remove() operation called on: 
+Fri Aug 26 10:17:34 UTC 2016|Unknown Alarm = ABSAA328100200 Alarm Split = ABS-AA-3-2-8-100-200
+[EL Finer]: transaction: 2016-08-26 10:17:34.691--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-08-26 10:17:34.692--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=JwtConfig )
+[EL Finest]: query: 2016-08-26 10:17:34.692--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery()
+[EL Fine]: sql: 2016-08-26 10:17:34.693--ClientSession(158064882)--Connection(650956404)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_JwtConfig_M WHERE ((configId = ?) AND (versionId = ?))
+	bind => [A42159F7-4FF6-411B-8BD2-C9BBA4429D9D, 2]
+[EL Finer]: transaction: 2016-08-26 10:17:34.695--ClientSession(158064882)--Connection(650956404)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-08-26 10:17:34.725--ServerSession(1851516305)--Connection(2064570530)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-08-26 10:17:34.725--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-08-26 10:17:34.726--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-08-26 10:17:34.726--UnitOfWork(159200435)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-08-26 10:17:34.726--ClientSession(158064882)--Thread(Thread[Test worker,5,main])--client released
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.springframework.test.context.junit4.SpringJUnit4ClassRunner).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+JwtConfig.jwtAlgorithm may not be null
+java.lang.SecurityException: JwtConfig.jwtAlgorithm may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at projectthree.app.shared.appbasicsetup.aaa.JwtConfig.isValid(JwtConfig.java:184)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.validateJwtConfig(JwtConfigTestCase.java:208)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.test5NegativeTesting(JwtConfigTestCase.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+JwtConfig.jwtAlgorithm size must be between 1 and 256
+java.lang.SecurityException: JwtConfig.jwtAlgorithm size must be between 1 and 256
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at projectthree.app.shared.appbasicsetup.aaa.JwtConfig.isValid(JwtConfig.java:184)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.validateJwtConfig(JwtConfigTestCase.java:206)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.test5NegativeTesting(JwtConfigTestCase.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+JwtConfig.expiration may not be null
+java.lang.SecurityException: JwtConfig.expiration may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at projectthree.app.shared.appbasicsetup.aaa.JwtConfig.isValid(JwtConfig.java:184)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.validateJwtConfig(JwtConfigTestCase.java:208)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.test5NegativeTesting(JwtConfigTestCase.java:253)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+JwtConfig.tokenKey may not be null
+java.lang.SecurityException: JwtConfig.tokenKey may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at projectthree.app.shared.appbasicsetup.aaa.JwtConfig.isValid(JwtConfig.java:184)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.validateJwtConfig(JwtConfigTestCase.java:208)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.test5NegativeTesting(JwtConfigTestCase.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+JwtConfig.tokenKey size must be between 1 and 256
+java.lang.SecurityException: JwtConfig.tokenKey size must be between 1 and 256
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at projectthree.app.shared.appbasicsetup.aaa.JwtConfig.isValid(JwtConfig.java:184)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.validateJwtConfig(JwtConfigTestCase.java:206)
+	at projectthree.app.server.service.appbasicsetup.aaa.JwtConfigTestCase.test5NegativeTesting(JwtConfigTestCase.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>
