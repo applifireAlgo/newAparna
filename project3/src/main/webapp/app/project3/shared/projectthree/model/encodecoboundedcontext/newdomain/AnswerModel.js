@@ -1,0 +1,31 @@
+Ext.define('Project3.project3.shared.projectthree.model.encodecoboundedcontext.newdomain.AnswerModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "ansId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "ansName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "ansWei",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

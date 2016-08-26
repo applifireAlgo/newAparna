@@ -1,0 +1,44 @@
+Ext.define('Project3.project3.shared.projectthree.model.encodecoboundedcontext.QoneRMModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "empId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empSal",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "createdBy",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "createdDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "updatedBy",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "updatedDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "activeStatus",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "txnAccessCode",
+          "type": "int",
+          "defaultValue": ""
+     }]
+});
